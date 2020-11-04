@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <link href ="css/inlink.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <head>
+        <title>
+            Sophie Loan Ho - Assigment 3
+        </title>
+    </head>
+<!-- navigation-->
+<body onload="checkCookie()">
+        <script>
+            function goBack() {
+            window.history.back();
+          }
+          //cookie
+
+          function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0; i<ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0)==' ') c = c.substring(1);
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+            }
+            function checkCookie() {
+            var vaykay =getCookie("image0");
+            if (vaykay != "") {
+            document.getElementById("icon0").remove();
+            document.getElementById("color0").style.display = "inline-block";
+            }
+        }
+             </script>
+        <div class="navbar">
+            <button class ="btn" onclick="goBack()">Back</button>
+            <div class="dropdown">
+                <button class="dropbtn">Team Member</button>
+                    <div class="dropdown-content">
+
+                        <a href="."> Blanca Jacobo: Assignment 3</a>
+                    </div>
+            </div>
+                <div class="name">
+                    Assignment 3 | Sophie Loan Ho
+                </div>
+        </div>
+        <!--grids-->
+                <script src="js/inlink.css"></script>
+                <button class="material-icons md-48" id="icon0" onclick="vaykay0();">favorite_border</button>
+                <button class="material-icons md-48 colored" id="color0" style="display: none">favorite</button>
+    </body>
+</html>
