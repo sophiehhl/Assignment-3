@@ -1,2 +1,2 @@
 
-These photo are taken by yours truly. :)
+These photos are taken by yours truly. :)
