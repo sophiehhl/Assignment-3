@@ -120,7 +120,7 @@ function checkCookie() {
 
   function favAlert()
   {
-      window.location.href = "Assignment-3/html/detail.html";
+      window.location.href = "/Assignment-3/html/detail.html";
 	
   }
   function unfavAlert()
