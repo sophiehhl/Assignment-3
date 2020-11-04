@@ -9,7 +9,7 @@ var url = window.location.href;
     
     var y = document.createElement("img");
 
-    var z = "../images/" + x.search["img"];
+    var z = "/Assignment-3/images/" + x.search["img"];
     y.setAttribute("src", z);
     
     var d = document.createElement("p");
