@@ -39,8 +39,8 @@ document.getElementsByTagName('body')[0].appendChild(main); //append the main di
 
 
 for (var i = 0; i < imgs.length; i++) {
-  url = "../images/" + imgs[i]; //image path file
-  urlOfDetailPage = "../" + html[i] + "?img=" + imgs[i] + "&title=" + title[i] + "&desc=" + desc[i]; //parameter URL
+  url = "/Assignment-3/images/" + imgs[i]; //image path file
+  urlOfDetailPage = "/Assignment-3/html/" + html[i] + "?img=" + imgs[i] + "&title=" + title[i] + "&desc=" + desc[i]; //parameter URL
 
   //images
 
